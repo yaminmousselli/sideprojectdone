@@ -1,0 +1,27 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#myform {
+		margin: 0 auto;
+		width: 1000px;
+		display: inline-block;
+		text-align: left;
+		float: left;
+		
+	}
+#state {
+	text-align: left;
+}

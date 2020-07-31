@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AIG</title>
+    
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <script src="test.js"></script>
+  </head>
+<body onload="priceFunction()">
+<nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+  <a class="navbar-brand dark" href="https://www.aig.com/"><img src="images/aig.png" width="200" height="100"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- nav start-->
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" style="color:#273F8A" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:#273F8A" href="quoteForm.html">Get Your Quote</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" style="color:#273F8A" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" style="color:#273F8A" href="checkoutForm.html">Checkout</a>
+      </li>
+    </ul>
+  </div>
+  <!-- nav end-->
+
+</nav>
+
+<!-- main container that inlcudes all text and three plans -->
+<main role="main" class="container">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4" style="color:#273F8A">Our Pricing</h1>
+        <p class="lead">Our travel protection plans generally do not cover losses related to COVID-19, including due to government-imposed travel bans or other travel restrictions related to COVID-19. We highly recommend that you DO NOT purchase a travel protetion plan for such conditions.</p><hr class="mb-4">
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            
+            <!-- basic card on purchase.html -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal" style="color:#273F8A">Basic</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title" id="basic"></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>No Additional Costs for kids</li>
+                        <li>Covers cancellations due to injury, sickness, death</li>
+                        <li><b>No Trip Cancellation</b></li>
+                        <li>100% insured trip interruption</li>
+                        <li>$15,000 ($500 Dental) Support</li>
+                        <li>$500 Trip Delay Coverage</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Purchase</button>
+                </div>
+            </div>
+            
+            <!-- plus card on purchase.html -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal" style="color:#273F8A">Plus</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title" id="plus"></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>No Additional Costs for kids</li>
+                        <li>Covers cancellations due to injury, sickness, death</li>
+                        <li>Trip Cancellation</li>
+                        <li>150% insured trip interruption</li>
+                        <li>$50,000 ($500 Dental) Support</li>
+                        <li>$800 Trip Delay Coverage</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Purchase</button>
+                </div>
+            </div>
+            
+            <!-- unlimited card on purchase.html -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal" style="color:#273F8A">Unlimited</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title" id="unlimited"></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>No Additional Costs for kids</li>
+                        <li>Covers cancellations due to injury, sickness, death</li>
+                        <li>Trip Cancellation</li>
+                        <li>150% insured trip interruption</li>
+                        <li>$100,000 ($500 Dental) Support</li>
+                        <li>$1000 Trip Delay Coverage</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Purchase</button>
+                </div>
+            </div>
+        </div>
+
+</main><!-- /.container -->
+
+<!-- footer start-->
+<footer class="footer mt-auto py-3 bg-light fixed-bottom">
+    <div class="container">
+        <span class="text-muted">Questions? Call us at 1.877.475.7749</span>
+    </div>
+</footer>
+<!-- footer end-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script></body>
+</html>
